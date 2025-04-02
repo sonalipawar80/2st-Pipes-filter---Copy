@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Iplayer } from './modals/players';
+import { cricketers } from './const/players';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'projectpip';
+playersArr:Array<Iplayer>=cricketers;
+serchVal!:string;
+searchField!:string;
+
+
 }
