@@ -22,6 +22,7 @@ export class playerFilterPipe implements PipeTransform{
      console.log(serchVal)
      let filteredArr= value.filter(p =>{
         if(typeof serchVal ==='string'){
+            const filteredA=p[searchField]?p[searchField]:'';
             return Object(p)[searchField].toString().toLowerCase().includes(serchVal.toLowerCase())
         }
     });

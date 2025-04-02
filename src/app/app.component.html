@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-4">
       <div class="form-group">
-        <select  [(ngModel)]="searchField" class="form-control">
+        <select  [(ngModel)]="searchField" (change)="onSearchFieldChange()" class="form-control" >
           <option value="name">Selected By Name</option>
           <option value="team">Selected By Team</option>
           <option value="odiRuns">Selected By odiRuns</option>

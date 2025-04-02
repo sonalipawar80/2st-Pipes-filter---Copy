@@ -12,5 +12,7 @@ playersArr:Array<Iplayer>=cricketers;
 serchVal!:string;
 searchField!:string;
 
-
+onSearchFieldChange() {
+  this.serchVal = ''; 
+}
 }
